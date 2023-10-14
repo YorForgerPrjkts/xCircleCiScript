@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-sudo apt install make
+apt install make
 git clone --depth=1 https://github.com/realme-mt6785-devs/android_kernel_realme_mt6785 -b lineage-20 --depth=1 KERNEL
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang --depth=1 clang
 
