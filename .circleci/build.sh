@@ -4,13 +4,13 @@ git clone --depth=1 $kernel_source $device_codename
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
-KERNEL_NAME=$kernel_name # IMPORTANT ! Declare your kernel name
-KERNEL_ROOTDIR=$(pwd)/$device_codename # IMPORTANT ! Fill with your kernel source root directory.
-DEVICE_CODENAME=$device_codename # IMPORTANT ! Declare your device codename
-DEVICE_DEFCONFIG=$kernel_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
+KERNEL_NAME=YorForger # IMPORTANT ! Declare your kernel name
+KERNEL_ROOTDIR=$(pwd)/RM6785 # IMPORTANT ! Fill with your kernel source root directory.
+DEVICE_CODENAME=RM6785 # IMPORTANT ! Declare your device codename
+DEVICE_DEFCONFIG=RM6785_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
-export KBUILD_BUILD_USER=xyzuan # Change with your own name or else.
-export KBUILD_BUILD_HOST=xyzscape-ci # Change with your own hostname.
+export KBUILD_BUILD_USER=Fskhri # Change with your own name or else.
+export KBUILD_BUILD_HOST=YorForger # Change with your own hostname.
 IMAGE=$(pwd)/lavender/out/arch/arm64/boot/Image.gz-dtb
 DATE=$(date +"%F-%S")
 START=$(date +"%s")
