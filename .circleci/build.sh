@@ -5,7 +5,7 @@ git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
 KERNEL_NAME=YorForger # IMPORTANT ! Declare your kernel name
-KERNEL_ROOTDIR=$(pwd)/RM6785 # IMPORTANT ! Fill with your kernel source root directory.
+KERNEL_ROOTDIR=$(pwd)/android_device_realme_RM6785 # IMPORTANT ! Fill with your kernel source root directory.
 DEVICE_CODENAME=RM6785 # IMPORTANT ! Declare your device codename
 DEVICE_DEFCONFIG=RM6785_defconfig # IMPORTANT ! Declare your kernel source defconfig file here.
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
