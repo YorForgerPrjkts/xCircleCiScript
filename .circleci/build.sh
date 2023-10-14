@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
-git clone --depth=1 https://github.com/realme-mt6785-devs/android_device_realme_RM6785 -b lineage-20
+git clone --depth=1 https://github.com/realme-mt6785-devs/android_kernel_realme_mt6785 -b lineage-20
 git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
 
 # Main
@@ -11,7 +11,7 @@ DEVICE_DEFCONFIG=RM6785_defconfig # IMPORTANT ! Declare your kernel source defco
 CLANG_ROOTDIR=$(pwd)/clang # IMPORTANT! Put your clang directory here.
 export KBUILD_BUILD_USER=Fskhri # Change with your own name or else.
 export KBUILD_BUILD_HOST=YorForger # Change with your own hostname.
-IMAGE=$(pwd)/lavender/out/arch/arm64/boot/Image.gz-dtb
+IMAGE=$(pwd)/RM6785/out/arch/arm64/boot/Image.gz-dtb
 DATE=$(date +"%F-%S")
 START=$(date +"%s")
 PATH="${PATH}:${CLANG_ROOTDIR}/bin"
