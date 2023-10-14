@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 echo "Downloading few Dependecies . . ."
+sudo apt install make
 git clone --depth=1 https://github.com/realme-mt6785-devs/android_kernel_realme_mt6785 -b lineage-20 --depth=1 KERNEL
-git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang clang
+git clone --depth=1 https://github.com/xyz-prjkt/xRageTC-clang --depth=1 clang
 
 # Main
 KERNEL_NAME=YorForger # IMPORTANT ! Declare your kernel name
@@ -53,7 +54,7 @@ function compile() {
 	finerr
 	exit 1
    fi
-    git clone --depth=1 $anykernel AnyKernel
+    git clone --depth=1 https://github.com/fskhri/AnyKernel3 AnyKernel
 	cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
 }
 
